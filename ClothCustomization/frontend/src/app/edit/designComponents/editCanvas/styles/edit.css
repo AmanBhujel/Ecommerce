@@ -1,0 +1,172 @@
+/* header  */
+.headerOfEditPage {
+    position: fixed;
+    top: 0;
+    height: 3.8rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    border-bottom: 1px solid #b7b7b7;
+    z-index: 10;
+}
+
+.headerOfEditPageProductName h2 {
+    margin-left: 1rem;
+}
+
+.headerOfEditPageButtons button {
+    background-color: transparent;
+    margin-right: 0.5rem;
+    font-size: 1.5rem;
+    border: none;
+    position: relative;
+}
+
+.headerOfEditPageButtons button:last-child::after {
+    content: 'Close';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: #fff;
+    padding: 0.5rem;
+    border-radius: 4px;
+    font-size: 0.7rem;
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+.headerOfEditPageButtons button:last-child:hover::after {
+    opacity: 1;
+    /* Show the tooltip on hover */
+}
+
+/* body of edit page for larger screen*/
+.bodyOfEditPage {
+    display: flex;
+    width: 100%;
+    height: 40.3rem;
+    margin-top: 3.8rem;
+}
+
+/* body of edit page for smaller screen*/
+.bodyOfEditPageForSmallScreen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: rgb(237, 237, 237);
+    margin-top: 3.8rem;
+    height: auto;
+    z-index: -2;
+    overflow-y: scroll;
+}
+
+/* Footer at bottom */
+.footerOfEditPage {
+    position: fixed;
+    bottom: 0;
+    height: 4.3rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    border-top: 1px solid #b7b7b7;
+    background-color: #fff;
+    z-index: 1;
+}
+
+.footerOfEditPageContent {
+    padding-right: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footerOfEditPageContent p {
+    color: black;
+    font-weight: 600;
+}
+
+.footerOfEditPageContent p i {
+    color: red;
+    font-size: 1rem;
+    margin-right: 0.5rem;
+}
+
+.footerOfEditPageContent button {
+    background-color: rgba(255, 0, 0, 0.839);
+    width: 10rem;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2rem;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+@media (max-width:350px) {
+    .headerOfEditPage {
+        height: 3.8rem;
+    }
+
+    .bodyOfEditPageForSmallScreen {
+        margin-top: 1rem;
+    }
+
+    .headerOfEditPageProductName h2 {
+        margin-left: 0rem;
+        font-size: 0.8rem;
+    }
+
+    .headerOfEditPageButtons button {
+        font-size: 0.8rem;
+        position: relative;
+    }
+
+}
+
+@media (min-width:350px) and (max-width:400px) {
+    .headerOfEditPage {
+        height: 3.8rem;
+    }
+    .bodyOfEditPageForSmallScreen {
+        margin-top: 1rem;
+    }
+    .headerOfEditPageProductName h2 {
+        margin-left: 0rem;
+        font-size: 1rem;
+    }
+
+    .headerOfEditPageButtons button {
+        font-size: 1rem;
+        position: relative;
+    }
+}
+
+@media (min-width:400px) and (max-width: 600px) {
+    .headerOfEditPage {
+        height: 3.8rem;
+    }
+
+    .headerOfEditPageProductName h2 {
+        margin-left: 1rem;
+        font-size: 1rem;
+    }
+
+    .headerOfEditPageButtons button {
+        font-size: 1.3rem;
+        position: relative;
+    }
+}
+
+@media (min-width:600px)and (max-width:1000px) {}

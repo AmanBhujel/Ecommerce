@@ -1,0 +1,127 @@
+.inputInSidebarText {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inputInSidebarText input {
+    max-width: 20rem; /* Set the maximum width for the input */
+    width: 85%;
+    height: 1.8rem;
+    background-color: rgba(216, 216, 216, 0.534);
+    border: 1px solid #000000; /* Removed the extra space in '1 px' */
+    border-radius: 5px;
+    outline: none;
+}
+
+.inputInSidebarText button {
+    max-width: 7rem; /* Set the maximum width for the button */
+    width: 15%;
+    height: 2rem;
+    background-color: #333333;
+    color: aliceblue;
+    border: none;
+    border-radius: 5px;
+}
+
+    .preDesignedTextsInSidebar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        overflow-y: scroll;
+    }
+
+    .designedTextContainer {
+        position: relative;
+        display: inline-block;
+        margin: 10px;
+    }
+
+    .designedTextImage {
+        position: relative;
+    }
+    .designedTextImage:last-child{
+        margin-bottom: 1rem;
+    }
+
+    .designedTextButton {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        background: rgba(129, 129, 129, 0.5); /* Semi-transparent background */
+        padding: 5px 10px;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+
+    .designedTextButton button{
+        background-color: #333;
+        border-radius: 20px;
+        color: white;
+        padding: 8px 16px;
+        border: none;
+        cursor: pointer;
+    }
+    .designedTextContainer:hover .designedTextButton {
+        opacity: 1;
+    }
+
+/* Apply grid layout for media queries between 500px and 900px */
+@media (min-width: 500px) and (max-width: 900px) {
+    .preDesignedTextsInSidebar {
+        display: grid; /* Use grid layout */
+        grid-template-columns: repeat(2, 1fr); /* 2 columns with equal width */
+        grid-gap: 10px; /* Gap between grid items */
+        justify-items: center; /* Center items horizontally */
+        align-items: center; /* Center items vertically */
+        width: 100%;
+    }
+}
+
+.designedTextContainer {
+    position: relative;
+    margin: 10px;
+}
+
+.designedTextImage {
+    position: relative;
+}
+
+.designedTextButton {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    background: rgba(129, 129, 129, 0.5); /* Semi-transparent background */
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.designedTextButton button {
+    background-color: #333;
+    border-radius: 20px;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.designedTextContainer:hover .designedTextButton {
+    opacity: 1;
+}

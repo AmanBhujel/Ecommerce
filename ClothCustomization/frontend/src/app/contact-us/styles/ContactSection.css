@@ -1,0 +1,243 @@
+.contactSection {
+    width: 100%;
+    height: 48.7rem;
+    display: flex;
+    justify-content: center;
+    background-image: url('/ContactUsBg.jpg');
+    background-position: center 0%;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contactSectionContent {
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactSectionContentHeading {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.contactSectionContentPhone {
+    font-size: 1.1rem;
+    margin-top: 1rem;
+}
+
+.contactSectionContentEmail {
+    font-size: 1.1rem;
+}
+
+.contactSectionContentSocials button {
+    font-size: 1.1rem;
+    background-color: transparent;
+    border: none;
+    color: aliceblue;
+    margin: 0.5rem;
+}
+
+.contactSectionContentSocials button:first-child:hover {
+    color: rgb(20, 124, 251);
+    cursor: pointer;
+}
+
+.contactSectionContentSocials button:nth-child(2):hover {
+    color: rgb(251, 20, 205);
+    cursor: pointer;
+}
+
+.contactSectionContentSocials button:nth-child(3):hover {
+    color: rgb(251, 20, 20);
+    cursor: pointer;
+}
+
+.contactSectionContentSocials button:nth-child(4):hover {
+    color: rgb(119, 119, 119);
+    cursor: pointer;
+}
+
+.contactSectionForm {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactSectionInputs {
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactSectionInputsInfo {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+.contactSectionInputsInfo input {
+    width: 100%;
+    margin: 1rem;
+    border-radius: 5px;
+    height: 3rem;
+    background-color: transparent;
+    border: 1px solid rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    outline: none;
+    position: relative;
+    padding-left: 10px;
+}
+
+.contactSectionInputsMessage {
+    width: 40%;
+    margin-left: 2rem;
+    height: 14rem;
+    border-radius: 5px;
+    border: 1px solid rgb(255, 255, 255);
+    color: #ffffff;
+    background-color: transparent;
+    margin-left: 5%;
+    outline: none;
+    text-align: left;
+    padding: 10px; /* Adjust padding as needed */
+    box-sizing: border-box; /* Ensure padding is included in the height */
+}
+
+.contactSectionForm button {
+    height: 3rem;
+    width: 20%;
+    background-color: #333333;
+    color: aliceblue;
+    border: 1px solid white;
+    margin-top: 2rem;
+}
+.contactSectionForm button:hover {
+    cursor: pointer;
+    background-color: #333333b6;
+}
+    
+@media (max-width:500px){
+    
+    .contactSectionContentHeading {
+        font-size: 2.5rem;
+        font-weight: 700;
+    }
+    
+    .contactSectionContentPhone {
+        font-size: 1rem;
+        margin-top: 1rem;
+    }
+    
+    .contactSectionContentEmail {
+        font-size: 1rem;
+    }
+    
+    .contactSectionContentSocials button {
+        font-size: 1.2rem;
+        background-color: transparent;
+        border: none;
+        color: aliceblue;
+        margin: 1rem 0.5rem 0 0;
+    }
+    
+    .contactSectionInputs {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .contactSectionInputsInfo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .contactSectionInputsInfo input {
+        width: 80%;
+        margin: 0 0 1rem 0rem;
+        height: 2.5rem;
+    }
+    
+    .contactSectionInputsMessage {
+        width: 80%;
+        height: 14rem;
+        border-radius: 5px;
+        margin-left: 0;
+    }
+    
+    .contactSectionForm button {
+        height: 2.5rem;
+        width: 10rem;
+        margin-top: 2rem;
+    }
+}
+
+@media (min-width:500px) and (max-width:850px){
+    
+    .contactSectionContentSocials button {
+        margin: 1rem 0.5rem 0 0;
+        font-size: 1.2rem;
+    }
+    
+    .contactSectionInputs {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .contactSectionInputsInfo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .contactSectionInputsInfo input {
+        width: 70%;
+        margin: 0 0 1rem 0rem;
+        height: 2.5rem;
+    }
+    
+    .contactSectionInputsMessage {
+        width: 70%;
+        height: 14rem;
+        margin-left: 0;
+    }
+    
+    .contactSectionForm button {
+        width: 10rem;
+        height: 2.5rem;
+        margin-top: 2rem;
+    }
+}
+@media(min-width:850px) and (max-width:1200px){
+    
+    .contactSectionContentHeading {
+        font-size: 2.8rem;
+        font-weight: 700;
+    }
+    
+    .contactSectionInputs {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .contactSectionForm button {
+        height: 2.5rem;
+    }
+}

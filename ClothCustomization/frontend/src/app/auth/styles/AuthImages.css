@@ -1,0 +1,57 @@
+.authImageSection{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.authImageContainer{
+    width: 95%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+}
+.authImageContainer img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+.authFeedback{
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+ 
+    width: 100%;
+       height: 100%;
+}
+.authFeedbackContents{
+    margin-bottom: 2rem;
+    z-index: 2;
+
+}
+.authFeedbackContentsFeedback{
+    color: aliceblue;
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+}
+.authFeedbackContentsName{
+    color: aliceblue;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.authFeedbackContentsPosition{
+    color: aliceblue;
+    font-size: 1.2rem;
+}
+@media(max-width:900px){
+    .authImageSection{
+        display: none;
+    }
+}

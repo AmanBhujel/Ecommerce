@@ -1,0 +1,517 @@
+.cartSection {
+    width: 100%;
+    display: flex;
+    height: 49rem;
+}
+
+.cartProducts {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 70%;
+    color: gray;
+}
+
+.cartProductsTop {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.cartProductsTopHeader {
+    font-size: 2rem;
+    color: black;
+    font-weight: 600;
+}
+
+.cartProductsBackButton {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 2%;
+    background-color: transparent;
+    font-size: 2rem;
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+
+.cartProductsBody {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.cartHeader {
+    width: 90%;
+    display: grid;
+    grid-template-columns: 30% repeat(4, 17.5%);
+    text-align: center;
+    align-items: center;
+    margin: 3rem 0 1rem 0;
+    color: #333333;
+    font-weight: 700;
+    /* border-bottom: 2px solid #333333; */
+}
+
+.cartHeaderText {
+    text-align: center;
+}
+
+.cartProductRow {
+    width: 90%;
+    display: grid;
+    grid-template-columns: 30% repeat(4, 17.5%);
+    text-align: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.cartProductName {
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.cartProductColor {
+    color: rgb(124, 124, 124);
+    font-size: 0.6rem;
+    font-weight: 600;
+}
+
+.cartProductImage img {
+    width: 4rem;
+    height: auto;
+}
+
+.cartProductImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.cartPrice {
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.cartProductQuantity {
+    font-size: 0.8rem;
+}
+
+.cartProductQuantity button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: black;
+    font-size: 1rem;
+    margin: 0.5rem;
+}
+
+
+
+.cartSubTotal {
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+
+.cartDeleteButton {
+    color: red;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.cartCheckout {
+    width: 30%;
+    background-color: #333333;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.cartCheckOutHeading {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #ffffff;
+    margin: 2rem 0 4rem 0;
+}
+
+.cartCheckOutAmount {
+    padding: 10px;
+    width: 50%;
+    height: 6rem;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.cartCheckoutDeliveryFee,
+.cartCheckoutSubTotal,
+.cartCheckoutTotal {
+    color: white;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    font-weight: bolder;
+    align-items: center;
+}
+
+.cartCheckoutTotal {
+    position: relative;
+}
+
+.cartCheckoutTotal::before {
+    content: '';
+    position: absolute;
+    top: -30%;
+    width: 100%;
+    background-color: #ffffff;
+    height: 2px;
+}
+
+.cartCheckoutTax {
+    color: gray;
+    font-size: 0.7rem;
+}
+
+.cartCheckoutButtonSection {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cartCheckoutButton {
+    width: 60%;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    color: #bababa;
+    background-color: black;
+    border: none;
+    margin: 1rem 0 0 1rem;
+    font-family: sans-serif;
+    cursor: pointer;
+    border-radius: 25px;
+    transition: box-shadow 0.3s, color 0.3s, width 0.5s, transform 0.3s;
+}
+
+.cartCheckoutButton:hover {
+    background-color: black;
+    /* border: 2px solid rgb(34, 34, 34); */
+    border: 2px solid white;
+
+}
+
+
+@media (max-width:600px) {
+    .cartSection {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cartProducts {
+        width: 100%;
+    }
+
+    .cartHeader {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 25% repeat(4, 18.75%);
+        text-align: center;
+        align-items: center;
+        margin: 3rem 0 1rem 0;
+        color: #333333;
+        font-weight: 700;
+    }
+
+    .cartHeaderText {
+        font-size: 0.7rem;
+    }
+
+    .cartProductRow {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 25% repeat(4, 18.75%);
+    }
+
+    .cartProductName {
+        font-size: 0.7rem;
+        font-weight: bold;
+    }
+
+    .cartPrice {
+        font-size: 0.7rem;
+        font-weight: 600;
+    }
+
+    .cartProductQuantity {
+        font-size: 0.7rem;
+    }
+
+    .cartProductQuantity button {
+        background-color: transparent;
+        border: none;
+        outline: none;
+        color: black;
+        font-size: 0.8rem;
+        margin: 0.5rem;
+    }
+
+    .cartSubTotal {
+        font-size: 0.7rem;
+        font-weight: 600;
+    }
+
+
+    .cartDeleteButton {
+        color: red;
+        font-size: 1rem;
+        cursor: pointer;
+    }
+
+    .cartCheckout {
+        width: 100%;
+        height: 7.2rem;
+        position: fixed;
+        bottom: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .cartCheckOutHeading {
+        display: none;
+    }
+
+    .cartCheckOutAmount {
+        padding: 0;
+        width: 50%;
+        max-width: 13rem;
+        height: 5rem;
+        font-size: 1rem;
+    }
+
+
+    .cartCheckoutDeliveryFee,
+    .cartCheckoutSubTotal,
+    .cartCheckoutTotal {
+        margin-bottom: 1rem;
+        font-size: 0.7rem;
+    }
+
+    .cartCheckoutTax {
+        display: none;
+    }
+
+    .cartCheckoutButtonSection {
+        width: 70%;
+    }
+
+    .cartCheckoutButton {
+        width: 60%;
+        height: 2rem;
+        font-size: 0.8rem;
+    }
+}
+
+@media (min-width:600px) and (max-width:800px) {
+    .cartSection {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cartProducts {
+        width: 95%;
+    }
+
+    .cartHeaderText {
+        font-size: 0.8rem;
+    }
+
+    .cartCheckout {
+        width: 100%;
+        height: 7.2rem;
+        position: fixed;
+        bottom: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .cartCheckOutHeading {
+        display: none;
+    }
+
+    .cartCheckOutAmount {
+
+        padding: 0;
+        width: 50%;
+        max-width: 13rem;
+        height: 5rem;
+        font-size: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .cartCheckoutDeliveryFee,
+    .cartCheckoutSubTotal,
+    .cartCheckoutTotal {
+        color: white;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 1rem;
+        font-size: 0.9rem;
+        font-weight: bolder;
+        align-items: center;
+    }
+
+    .cartCheckoutTotal {
+        position: relative;
+    }
+
+    .cartCheckoutTotal::before {
+        content: '';
+        position: absolute;
+        top: -30%;
+        width: 100%;
+        background-color: #ffffff;
+        height: 2px;
+    }
+
+    .cartCheckoutTax {
+        display: none;
+    }
+
+    .cartCheckoutButtonSection {
+        width: 70%;
+    }
+
+    .cartCheckoutButton {
+        width: 60%;
+        height: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1rem;
+        color: #bababa;
+        background-color: black;
+        border: none;
+        margin: 1rem 0 0 0;
+        font-family: sans-serif;
+        cursor: pointer;
+        border-radius: 25px;
+        transition: box-shadow 0.3s, color 0.3s, width 0.5s, transform 0.3s;
+    }
+}
+
+@media(min-width:800px) and (max-width:1000px) {
+    .cartHeaderText {
+        font-size: 0.8rem;
+    }
+
+    .cartProducts {
+        width: 75%;
+    }
+
+    .cartProductName {
+        font-size: 0.9rem;
+        font-weight: bold;
+    }
+
+    .cartProductColor {
+        color: rgb(124, 124, 124);
+        font-size: 0.6rem;
+        font-weight: 600;
+    }
+
+    .cartProductImage img {
+        width: 4rem;
+        height: auto;
+    }
+
+    .cartProductImage {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .cartPrice {
+        font-size: 0.8rem;
+        font-weight: 600;
+    }
+
+    .cartProductQuantity {
+        font-size: 0.8rem;
+    }
+
+    .cartProductQuantity button {
+        background-color: transparent;
+        border: none;
+        outline: none;
+        color: black;
+        font-size: 1rem;
+        margin: 0.5rem;
+    }
+
+
+
+    .cartSubTotal {
+        font-size: 0.8rem;
+        font-weight: 600;
+    }
+
+    .cartCheckout {
+        width: 25%;
+    }
+
+    .cartCheckOutAmount {
+        width: 80%;
+        font-size: 0.8rem;
+    }
+
+    .cartCheckoutDeliveryFee,
+    .cartCheckoutSubTotal,
+    .cartCheckoutTotal {
+        font-size: 0.8rem;
+    }
+
+    .cartCheckoutButton {
+        width: 70%;
+        font-size: 0.8rem;
+        height: 2.5rem;
+    }
+}
+
+@media (min-width:1000px) and (max-width:1200px) {
+    .cartCheckOutAmount {
+        width: 60%;
+    }
+
+    .cartCheckoutButton {
+        width: 60%;
+        font-size: 0.9rem;
+    }
+}

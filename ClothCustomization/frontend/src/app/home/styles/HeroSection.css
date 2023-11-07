@@ -1,0 +1,503 @@
+.heroSectionContainer {
+  background-color: #ffffff;
+  width: 100%;
+  height: 37rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3.5rem;
+}
+.heroSectionContainerContents {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.heroSectionContent {
+  width: 55%;
+  margin: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+.heroSectionContent h2 {
+  font-weight: 700;
+  color: #333333;
+  font-size: 4rem;
+  max-width: 40rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    line-height: 1.2;
+    font-family: 'Bungee', cursive;}
+
+.heroSectionContent p {
+  font-size: 1.2rem;
+  color: #000000;
+  max-width: 40rem;
+  margin: 2rem 0 0 0;
+  font-family: 'Mooli', sans-serif;
+}
+
+.heroSectionImage {
+  margin: 3rem 0 0 0;
+  position: relative;
+  width: 45%;
+  height: 38rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.heroSectionButtons {
+  display: flex;
+  width: 100%;
+  height: 4.87rem;
+  align-items: center;
+  margin: 3rem 0 0 10rem;
+}
+
+.heroSectionLearnMoreButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  width: 10rem;
+  color: #333333;
+  background-color: #ffffff;
+  border: 2px solid black;
+  height: 45px;
+  margin: 3rem 0 0 1rem;
+  font-family: sans-serif;
+  cursor: pointer;
+  transition: box-shadow 0.3s, color 0.3s, width 0.5s, transform 0.3s;
+  text-decoration: none;
+  outline: none;
+}
+
+.heroSectionLearnMoreButton:focus {
+  outline: none;
+}
+
+.heroSectionLearnMoreButton:hover {
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.4);
+  transform: scale(1.05);
+}
+
+.heroSectionStartButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  width: 8rem;
+  color: #ffffff;
+  background-color: #333333;
+  border: 2px solid black;
+  height: 45px;
+  text-decoration: none;
+  margin: 3rem 0 0 1rem;
+  font-family: sans-serif;
+  cursor: pointer;
+  transition: box-shadow 0.3s, color 0.3s, width 0.5s, transform 0.3s;
+}
+
+.heroSectionStartButton:focus {
+  outline: none;
+}
+
+.heroSectionStartButton:hover {
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.4);
+  color: #f5f5f5;
+  transform: scale(1.05);
+}
+
+/* For smallest screen */
+@media (max-width: 360px) {
+  .heroSectionContainer {
+    background-color: #ffffff;
+    width: 100%;
+    height: 33rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .heroSectionContainerContents {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+  }
+
+  .heroSectionContent {
+    width: 100%;
+    height: 50%;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .heroSectionContent h2 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 1rem;
+  }
+
+  .heroSectionContent p {
+    margin-top: 1rem;
+    font-size: 0.8rem;
+    text-align: center;
+  }
+
+  .heroSectionImage {
+    margin: 0;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .heroSectionImage img {
+    width: 100%;
+    height: 20rem;
+  }
+
+  .heroSectionButtons {
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0 0 0;
+    align-items: center;
+  }
+
+  .heroSectionLearnMoreButton {
+    margin: 0 0 0 1rem;
+    width: 6rem;
+    height: 35px;
+    font-size: 0.9rem;
+  }
+
+  .heroSectionStartButton {
+    margin: 0;
+    width: 6rem;
+    height: 35px;
+    font-size: 0.9rem;
+  }
+}
+
+/* Small devices (phones) */
+@media (min-width: 360px) and (max-width: 576px) {
+  .heroSectionContainer {
+    background-color: #ffffff;
+    width: 100%;
+    height: 30rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .heroSectionContainerContents {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
+  .heroSectionContent {
+    width: 100%;
+    height: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .heroSectionContent h2 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .heroSectionContent p {
+    margin-top: 1rem;
+    font-size: 0.8rem;
+    text-align: center;
+  }
+
+  .heroSectionImage {
+    margin: 0;
+    width: 100%;
+    height: 55%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .heroSectionImage img {
+    width: 20rem;
+    height: 16rem;
+  }
+
+  .heroSectionButtons {
+    display: flex;
+    justify-content: center;
+    margin: 0.5rem 0 0 0;
+    align-items: center;
+  }
+
+  .heroSectionLearnMoreButton {
+    margin: 0 0 0 1rem;
+    width: 8rem;
+    height: 40px;
+    font-size: 0.9rem;
+  }
+
+  .heroSectionStartButton {
+    margin: 0;
+    width: 8rem;
+    height: 40px;
+    font-size: 0.9rem;
+  }
+}
+
+/* Medium devices (tablets and small laptops) */
+@media (min-width: 576px) and (max-width: 768px) {
+  .heroSectionContainer {
+    height: 33rem;
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .heroSectionContainerContents {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
+  .heroSectionContent {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+
+
+  }
+
+  .heroSectionContent h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  .heroSectionContent p {
+    margin-top: 1rem;
+    font-size: 1rem;
+    text-align: center;
+
+  }
+
+  .heroSectionImage {
+    margin: 0;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .heroSectionImage img {
+    width: 20rem;
+    height: 18rem;
+  }
+
+  .heroSectionButtons {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    align-items: center;
+  }
+
+
+}
+
+/* Large devices (laptops and desktops) */
+@media (min-width: 769px) and (max-width: 989px) {
+  .heroSectionContainer {
+    height: 34rem;
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .heroSectionContainerContents {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
+  .heroSectionContent {
+    width: 100%;
+    height: 45%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+
+
+  }
+
+  .heroSectionContent h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  .heroSectionContent p {
+    margin-top: 1rem;
+    font-size: 1rem;
+    text-align: center;
+
+  }
+
+  .heroSectionImage {
+    margin: 0;
+    width: 100%;
+    height: 55%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .heroSectionImage img {
+    width: 20rem;
+    height: 18rem;
+  }
+
+  .heroSectionButtons {
+    display: flex;
+    justify-content: center;
+    margin: 0.5rem 0 0 0;
+    align-items: center;
+  }
+
+}
+
+/* Extra large devices (large screens and desktops) */
+@media (min-width: 990px) and (max-width: 1200px) {
+  .heroSectionContainer {
+    height: 31rem;
+  }
+
+  .heroSectionContainerContents {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .heroSectionContent {
+    margin: 0rem 0 0 1rem;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .heroSectionContent h2 {
+    font-size: 3rem;
+    margin: 0 0 0 1rem;
+  }
+
+  .heroSectionContent p {
+
+    margin: 1.5rem 0 0 1rem;
+  }
+
+  .heroSectionImage {
+    margin: 3rem 0 0 0;
+    position: relative;
+    width: 45%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .heroSectionImage1 {
+    position: absolute;
+    left: 40%;
+    width: 20rem;
+    height: 30rem;
+    margin: 6rem 0 0 0;
+  }
+
+  .heroSectionImage2 {
+    width: 20rem;
+    left: 10%;
+    position: absolute;
+    height: 25rem;
+    margin: 6rem 0 0 0;
+  }
+
+
+
+  .heroSectionButtons {
+    display: flex;
+    align-items: flex-start;
+    margin: 0rem;
+  }
+
+  .heroSectionLearnMoreButton {
+    margin: 3rem 0 0 1rem;
+  }
+
+}
+
+/* Extra large devices (large screens and desktops) */
+@media (min-width: 1200px) {
+  .heroSectionContent {
+    margin: 0rem 0 0 1rem;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .heroSectionContainerContents {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .heroSectionContent h2 {
+    font-size: 4rem;
+    font-weight: 700;
+    margin: 0 0 0 3rem;
+  }
+
+  .heroSectionContent p {
+    margin: 1rem 0 0 3rem;
+    font-size: 1.2rem;
+  }
+
+  .heroSectionButtons {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin: 0rem 0 0 2rem;
+    width: 100%;
+    height: 5.8rem;
+  }
+
+  .heroSectionStartButton {
+
+    margin: 3rem 0 0 1rem;
+  }
+}

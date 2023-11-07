@@ -1,0 +1,91 @@
+.accountSidebar {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border-right: 2px solid #333333;
+    background-color: rgb(255, 255, 255);
+
+}
+
+.accountSidebarHeading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 800;
+    text-align: center;
+    margin-top: 2.5rem;
+}
+
+.accountSidebarButtons {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+}
+
+.accountSidebarButtons ul {
+    list-style: none;
+    padding: 0;
+}
+
+.accountSidebarButtons ul li {
+    width: 100%;
+    padding-left: 15px;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #333333;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.accountSidebarButtons ul li:first-child {
+    border-top: 1px solid #333333;
+}
+
+.accountSidebarButtons ul li:hover {
+    background-color: rgb(182, 182, 182);
+
+}
+
+.accountSidebarButtons .selected {
+    background-color: rgb(182, 182, 182);
+}
+
+@media (min-width:800px) and (max-width:1000px) {
+    .accountSidebar {
+        width: 25%;
+    }
+}
+
+@media (max-width:800px) {
+    .accountSidebar {
+        position: fixed;
+        width: 40%;
+        z-index: 10;
+        min-width: 15rem;
+    }
+
+    .sidebarButtonForSmallScreen {
+        width: 2rem;
+        height: 2rem;
+        cursor: pointer;
+        position: absolute;
+        top: 4rem;
+        left: 1rem;
+        background-color: transparent;
+        border: none;
+        font-size: 2rem;
+    }
+    .accountSidebarCloseButton{
+        font-size: 1.5rem;
+        background-color: transparent;
+        z-index: 1;
+        border: none;
+        position: absolute;
+        right: 5%;
+        top: 1rem;
+        color: red;
+        cursor: pointer;
+    }
+}

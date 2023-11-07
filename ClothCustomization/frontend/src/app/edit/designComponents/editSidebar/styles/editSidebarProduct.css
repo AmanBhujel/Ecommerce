@@ -1,0 +1,63 @@
+.productSectionInSidebarContent{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(236, 236, 236, 0.245);
+}
+.productSectionInSidebarContent h3{
+    font-size: 1rem;
+    padding: 1rem;
+}
+.productSectionInSidebarContentPrice{
+    font-size: 0.9rem;
+    padding: 0 0 0 1rem;
+}
+.productSectionInSidebarContentDescription{
+    font-size: 0.9rem;
+    width: 95%;
+    margin:1rem 0 0 0.5rem;
+}
+.productSectionInSidebarContentPrintingTechnique{
+    margin: 1rem 0 0 0.5rem;
+}
+.productSectionInSidebarContentPrintingTechnique span{
+    font-weight: 600;
+}
+.productSectionInSidebarContentSizeButtons{
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 0 0 0.5rem;
+    border-top: 1px solid #333333;
+    
+}
+.productSectionInSidebarContentSizeButtonsTexts{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 1rem 0 0rem;
+}
+.productSectionInSidebarContentSizeButtonsTexts p:first-child{
+    font-size: 0.9rem;
+}
+.productSectionInSidebarContentSizeButtonsTexts p:last-child{
+    font-size: 0.6rem;
+    color: rgb(47, 47, 241);
+}
+.productSectionInSidebarContentSizeButtonsTexts p:last-child:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.productSectionInSidebarContentSizeButtonsButton button {
+    background-color: transparent;
+    border: 1px solid #333333;
+    width: 2rem;
+    height: 2rem;
+    margin: 0 0.5rem 0 0;
+    text-transform: uppercase;
+    transition: box-shadow 0.3s ease; /* Add a smooth transition effect */
+}
+
+.productSectionInSidebarContentSizeButtonsButton button:hover {
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Add your desired box shadow values */
+}
+

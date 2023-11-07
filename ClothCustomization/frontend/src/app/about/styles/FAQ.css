@@ -1,0 +1,139 @@
+.faqContainer {
+    width: 100%;
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid #333333;
+}
+
+.faqContainerHeading {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-top: 2rem;
+}
+
+.faqItem {
+    width: 70%;
+    min-height: 3rem;
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: aliceblue;
+}
+
+.faqQuestion {
+    display: flex;
+    align-items: center;
+    height: 3rem;
+    padding: 10px 10px 10px 20px;
+    font-size: 1.3rem;
+    background-color: #333333;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.faqQuestion:hover{
+    background-color: #575757;
+
+}
+.faqAnswer {
+    margin-top: -20px;
+    background-color: #575757;
+    padding: 20px;
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    font-size: 1.2rem;
+    transition: margin-top 0.5s ease-in-out, opacity 0.5s ease-in-out, max-height 0.5s ease-in-out;
+    border-radius: 10px
+}
+
+.faqItem.active .faqAnswer {
+    margin-top: 5px;
+    /* Transition from -20px to 0 for the margin */
+    max-height: 100px;
+    /* Adjust the max height as needed */
+    opacity: 1;
+}
+
+.faqItem:last-child {
+    margin-bottom: 2rem;
+}
+
+@media (max-width:450px) {
+    .faqContainerHeading {
+        font-size: 1.3rem;
+        font-weight: 800;
+    }
+
+    .faqItem {
+        width: 95%;
+    }
+
+    .faqQuestion {
+        height: 3rem;
+        padding: 3px 10px 3px 10px;
+        font-size: 0.9rem;
+        border-radius: 15px;
+    }
+
+    .faqAnswer {
+        padding: 10px 10px 10px 10px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (min-width:450px) and (max-width:600px) {
+    .faqContainerHeading {
+        font-size: 1.5rem;
+        font-weight: 800;
+    }
+
+    .faqItem {
+        width: 95%;
+    }
+
+    .faqQuestion {
+        height: 3rem;
+        padding: 5px 10px 5px 15px;
+        font-size: 1rem;
+        border-radius: 15px;
+    }
+
+    .faqAnswer {
+        padding: 15px 10px 15px 15px;
+        font-size: 1rem;
+    }
+}
+
+@media (min-width:600px) and (max-width:1000px) {
+    .faqContainerHeading {
+        font-size: 2rem;
+        font-weight: 800;
+    }
+
+    .faqItem {
+        width: 90%;
+    }
+
+    .faqQuestion {
+        height: 3rem;
+        padding: 5px 10px 5px 15px;
+        font-size: 1.2rem;
+    }
+
+    .faqAnswer {
+        padding: 15px 10px 15px 15px;
+        font-size: 1.1rem;
+    }
+}
+
+@media (min-width:1000px) and (max-width:1200px) {
+    .faqContainerHeading {
+        font-size: 2.5rem;
+    }
+
+    .faqItem {
+        width: 80%;
+    }
+}

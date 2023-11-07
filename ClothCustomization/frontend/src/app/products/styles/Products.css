@@ -1,0 +1,13 @@
+.products-container {
+    display: flex;
+    flex-direction: row; /* Default: show in row layout */
+  }
+
+
+  @media (max-width: 900px) {
+    .products-container {
+      flex-direction: column; /* Show in column layout for screens less than 900px wide */
+      justify-content:center;
+      align-items:center;
+    }
+  }

@@ -1,0 +1,174 @@
+.editCanvasMain {
+    width: 100%;
+    height: auto;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.editCanvasButtonSection {
+    width: 100%;
+    height: auto;
+    background-color: rgba(0, 255, 255, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+/* Style the tooltips */
+.editCanvasButtonSection button {
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: transparent;
+    border: 1px solid black;
+    font-size: 1rem;
+    border-radius: 2px;
+    margin: 0.3rem;
+    position: relative; /* Ensure relative positioning for the tooltip */
+  }
+  
+  .editCanvasButtonSection button::before {
+    content: attr(data-tooltip); 
+    background-color: rgba(0, 0, 0, 0.8); 
+    color: white; 
+    font-size: 0.8rem; 
+    padding: 0.2rem 0.5rem; 
+    border-radius: 3px; 
+    position: absolute;
+    top: 100%; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    opacity: 0; 
+    transition: opacity 0.3s ease-in-out; 
+    pointer-events: none; 
+  }
+  
+  .editCanvasButtonSection button:hover::before {
+    opacity: 1; 
+  }
+  
+
+.editCanvasButtonSection button:hover {
+    background-color: rgb(218, 218, 218);
+    cursor: pointer;
+}
+
+.editCanvasEditingSection {
+    background-color: rgb(237, 237, 237);
+    width: 100%;
+    height: 43.77rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.editCanvasImageSection {
+    width: auto;
+    height: 43.77rem;
+    position: relative;
+    margin-top: 2rem;
+}
+
+.editCanvasEditingSection img {
+    position: relative;
+    z-index: 1;
+}
+
+.canvasContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 2;
+    top: 111px;
+    left: 190px;
+}
+
+.canvasContainerCanvas {
+    cursor: pointer;
+    border: 2px solid transparent;
+    position: absolute;
+    top: 111px;
+    left: 190px;
+}
+
+.canvasContainerCanvas.showGrid {
+    border: 2px solid rgb(0, 0, 0);
+    border-style: dotted;
+}
+/* Apply styles when the viewport width is less than 500 pixels */
+@media (max-width: 500px) {
+    .editCanvasButtonSection {
+        width: 100%;
+        height: auto;
+        margin-top: 1rem;
+    }
+    .editCanvasButtonSection button {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+    
+    .editCanvasEditingSection {
+        height: 43.77rem;
+    }
+    
+    .editCanvasImageSection {
+        width: auto;
+        height: 43.77rem;
+        position: relative;
+        margin-top: 2rem;
+    }
+    
+    .editCanvasMain {
+        width: 100%;
+        height: auto;
+     
+    }
+
+ 
+}
+
+@media(min-width:500px) and (max-width: 550px) {
+    .editCanvasMain {
+        width: 100%;
+        height: auto;
+    }
+
+    .editCanvasImageSection {
+        height: auto;
+    }
+    .editCanvasButtonSection {
+        width: 100%;
+        height: auto;
+        margin-top: 1rem;
+    }
+}
+
+
+@media(min-width:550px) and (max-width: 600px) {
+    .editCanvasMain {
+        width: 90%;
+        height: auto;
+    }
+
+    .editCanvasImageSection {
+        height: auto;
+    }
+    .editCanvasButtonSection {
+        width: 100%;
+        height: auto;
+        margin-top: 1rem;
+    }
+}
+
+@media (min-width:600px) and (max-width: 900px) {
+    .editCanvasButtonSection {
+        width: 100%;
+        height: auto;
+        margin-top: 1rem;
+    }
+}

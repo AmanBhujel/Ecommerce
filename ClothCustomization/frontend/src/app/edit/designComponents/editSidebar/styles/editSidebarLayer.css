@@ -1,0 +1,90 @@
+.LayersSectionOfSidebar {
+    width: 100%;
+    height: auto;
+}
+
+.NoLayersMessage{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.NoLayersMessage p{
+    font-size: 1rem;
+}
+.NoLayersMessage img{
+    width: 10rem;
+}
+.LayersSectionOfSidebarObjectList {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #333333;
+}
+.LayersSectionOfSidebarObjectList:hover {
+    background-color: #d1d1d1;
+    cursor: pointer;
+}
+.LayersSectionOfSidebarObjectList:first-child {
+    border-top: 1px solid #333333;
+}
+.LayersSectionOfSidebarObjectListContent {
+    display: flex;
+    align-items: center;
+}
+
+.LayersSectionOfSidebarObjectListTexts {
+    margin-left: 0.5rem;
+}
+
+.LayersSectionOfSidebarObjectListTexts p:first-child {
+    color: rgba(0, 0, 0, 0.464);
+    font-size: 0.7rem;
+    font-weight: 600;
+}
+
+.LayersSectionOfSidebarObjectListTexts p:last-child {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.LayersSectionOfSidebarObjectListButtons {
+    display: flex;
+}
+
+.LayersSectionOfSidebarObjectListButtons button {
+    background-color: transparent;
+    border: none;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.tooltip::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    top: 100%;
+    /* Adjust the positioning as needed */
+    left: 0%;
+    transform: translateX(-50%);
+    padding: 5px 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    border-radius: 5px;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s, visibility 0.2s;
+}
+
+.tooltip:hover::after {
+    opacity: 1;
+    visibility: visible;
+}

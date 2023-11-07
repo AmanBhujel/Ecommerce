@@ -1,0 +1,18 @@
+.checkoutNavbar {
+    height: 5rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 2px solid gray;
+}
+
+.checkoutNavbar h1 {
+    font-size: 2rem;
+    cursor: pointer;
+}
+@media (max-width:650px){
+    .checkoutNavbar{
+        height: 4rem;
+    }
+}

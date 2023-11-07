@@ -1,0 +1,117 @@
+.checkoutFormHeading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.checkoutFormHeading i {
+    font-size: 2rem;
+}
+
+.checkoutFormHeading p {
+    font-size: 1.4rem;
+}
+
+.checkoutForm {
+    margin-top: 3rem;
+    width: 60rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px;
+}
+
+.checkoutForm input,
+.checkoutForm select,
+.checkoutForm label {
+    width: 100%;
+    min-width: 10rem;
+    padding: 10px;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.checkOutPageBottom {
+    margin-top: 2rem;
+    color: rgb(6, 6, 6);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.CheckOutDiv {
+    display: flex;
+}
+
+.checkoutButton {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333333;
+    color: aliceblue;
+    height: 3rem;
+    width: 10rem;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+@media (max-width:500px) {
+    .checkoutForm {
+        width: 20rem;
+        grid-gap: 20px;
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 1rem;
+    }
+    .checkoutForm input,
+    .checkoutForm select {
+        min-width: 8rem;
+    }
+
+    .checkoutButton {
+        margin-top: 0rem;
+    }
+}
+
+@media (min-width:500px) and (max-width:660px) {
+    .checkoutForm {
+        width: 30rem;
+        grid-gap: 20px;
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 1rem;
+    }
+
+    .checkoutForm input,
+    .checkoutForm select {
+        min-width: 8rem;
+    }
+
+    .checkoutButton {
+        margin-top: 0rem;
+    }
+}
+
+@media (min-width:660px) and (max-width:820px) {
+    .checkoutForm {
+        width: 40rem;
+        grid-gap: 30px;
+        margin-top: 1rem;
+    }
+
+    .checkoutButton {
+        margin-top: 1rem;
+    }
+}
+
+@media (min-width:820px) and (max-width :980px) {
+    .checkoutForm {
+        width: 50rem;
+        grid-gap: 30px;
+    }
+
+    .checkoutButton {
+        margin-top: 1rem;
+    }
+}

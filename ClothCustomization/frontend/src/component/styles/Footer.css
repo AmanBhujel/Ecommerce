@@ -1,0 +1,374 @@
+.footer {
+    width: 100%;
+    height: 12.1rem;
+    background-color: #333333;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Mooli', sans-serif;
+
+}
+
+.footerFirstSection {
+    width: 100%;
+    color: aliceblue;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer h2 {
+    font-size: 3rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.footerLinks {
+    margin: 2rem;
+}
+
+.footerLinks p {
+}
+
+.footerLinks ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+}
+
+.footerLinks ul li {
+    margin: 1rem;
+}
+
+.footerLinks ul li:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.footerSocials {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footerSocials p {
+    margin: 1rem 0 0.5rem 0;
+}
+
+.footerSocialsInput {
+    display: flex;
+}
+
+.footerSocialsInput input {
+    background: transparent;
+    width: 15rem;
+    height: 2rem;
+    color: aliceblue;
+    outline: none;
+    border: 1px solid #C9C9C9;
+    padding-left: 1rem;
+}
+
+.footerSocialsInput button {
+
+    height: 2.2rem;
+    width: 2rem;
+    background-color: #C9C9C9;
+    border: none;
+    color: white;
+    outline: none;
+    font-size: 2rem;
+    text-align: center;
+    padding: 0;
+    cursor: pointer;
+}
+
+.footerSocialsSocialLinks {
+    display: flex;
+    margin: 0.5rem 0 0 0;
+    justify-content: flex-start;
+}
+
+.footerSocialsSocialLinks ul {
+    display: flex;
+    justify-content: flex-start;
+    padding: 0;
+}
+
+.footerSocialsSocialLinks ul li {
+    margin: 0.5rem;
+    list-style: none;
+    font-size: 1.2rem;
+}
+
+.footerSocialsSocialLinks ul li:first-child:hover {
+    color: rgb(20, 124, 251);
+    cursor: pointer;
+}
+
+.footerSocialsSocialLinks ul li:nth-child(2):hover {
+    color: rgb(251, 20, 205);
+    cursor: pointer;
+}
+
+.footerSocialsSocialLinks ul li:nth-child(3):hover {
+    color: rgb(251, 20, 20);
+    cursor: pointer;
+}
+
+.footerSocialsSocialLinks ul li:nth-child(4):hover {
+    color: rgb(119, 119, 119);
+    cursor: pointer;
+}
+
+.footerBody {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footerSecondSection {
+    border-top: 1px solid #C9C9C9;
+    width: 90%;
+}
+
+.footerBottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footerBottom p {
+    font-size: 0.8rem;
+}
+
+.footerBottom ul {
+    display: flex;
+}
+
+.footerBottom ul li {
+    font-size: 0.8rem;
+    list-style: none;
+    text-decoration: underline;
+    margin: 0.5rem;
+}
+
+.footerBottom ul li:hover {
+    cursor: pointer;
+}
+
+@media (min-width: 0) and (max-width: 345px) {
+    .footerFirstSection {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer {
+        height: 19.45rem;
+
+    }
+
+    .footer h2 {
+        font-size: 2rem;
+    }
+
+    .footerLinks {
+        margin: 1rem;
+    }
+
+    .footerLinks ul li {
+        font-size: 0.6rem;
+        margin: 0.5rem;
+    }
+
+    .footerSocials {
+        margin: 0.5rem;
+    }
+
+    .footerSocials p {
+        margin: 0.5rem 0 0.5rem 0;
+    }
+
+    .footerSecondSection {
+        margin: 0;
+        width: 100%;
+
+    }
+
+    .footerBottom {
+        display: flex;
+        flex-direction: column;
+        height: 3.8rem;
+    }
+
+    .footerBottom ul {
+        display: flex;
+        justify-content: space-around;
+    }
+
+
+    .footerBottom ul li {
+        font-size: 0.5rem;
+        padding-left: 0;
+    }
+}
+
+@media (min-width: 345px) and (max-width: 576px) {
+    .footerFirstSection {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer {
+        height: 19.45rem;
+
+    }
+
+    .footer h2 {
+        font-size: 2rem;
+    }
+
+    .footerLinks {
+        margin: 1rem;
+    }
+
+    .footerLinks ul li {
+        font-size: 0.7rem;
+        margin: 0.5rem;
+    }
+
+    .footerSocials {
+        margin: 0.5rem;
+    }
+
+    .footerSocials p {
+        margin: 0.5rem 0 0.5rem 0;
+    }
+
+    .footerSecondSection {
+        margin: 0;
+        width: 100%;
+
+    }
+
+    .footerBottom {
+        display: flex;
+        flex-direction: column;
+        height: 3.8rem;
+    }
+
+    .footerBottom ul {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .footerBottom ul li {
+        font-size: 0.7rem;
+    }
+
+
+
+
+}
+
+/* Medium devices (tablets and small laptops) */
+@media (min-width: 576px) and (max-width: 768px) {
+    .footerFirstSection {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer {
+        height: 19.45rem;
+
+    }
+
+    .footer h2 {
+        font-size: 2rem;
+    }
+
+    .footerLinks {
+        margin: 1rem;
+    }
+
+    .footerLinks ul li {
+        font-size: 0.7rem;
+        margin: 0.5rem;
+    }
+
+    .footerSocials {
+        margin: 0.5rem;
+    }
+
+    .footerSocials p {
+        margin: 0.5rem 0 0.5rem 0;
+    }
+
+    .footerSecondSection {
+        margin: 0;
+        width: 90%;
+
+    }
+
+    .footerBottom {
+        display: flex;
+        flex-direction: column;
+        height: 3.8rem;
+    }
+
+    .footerBottom ul {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .footerBottom ul li {
+        font-size: 0.7rem;
+    }
+}
+
+/* Large devices (laptops and desktops) */
+@media (min-width: 769px) and (max-width: 992px) {
+    .footer h2 {
+        font-size: 2rem;
+    }
+
+    .footerLinks {
+        margin: 1rem;
+    }
+
+    .footerLinks ul {
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footerLinks ul li {
+        font-size: 0.7rem;
+        margin: 1rem 0 0 0 ;
+    }
+
+    .footerSocialsInput input {
+        width: 14rem;
+    }
+    .footerBottom ul li {
+        font-size: 0.7rem;
+        padding-left: 0;
+    }
+}
+
+/* Extra large devices (large screens and desktops) */
+@media (min-width: 993px) and (max-width: 1200px) {
+    .footer h2 {
+        font-size: 2.5rem;
+    }
+    
+    .footerLinks ul li {
+        font-size: 0.8rem;
+        }}
+
+/* Extra large devices (large screens and desktops) */
+@media (min-width: 1201px) {
+    /* Styles for extra large devices */
+}

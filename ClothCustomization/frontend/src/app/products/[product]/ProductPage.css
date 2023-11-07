@@ -1,0 +1,543 @@
+.productPage {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 45.23rem;
+    overflow-x: hidden;
+}
+
+.productPageImageSection {
+    width: 40%;
+    margin-right: 5%;
+}
+
+.productPageImageSection img {
+    width: 100%;
+    height: 35rem;
+    object-fit: contain;
+    border: 1px solid black;
+}
+
+.productPageSmallerImages img {
+    height: auto;
+    width: 80px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.productPageContentSection {
+    display: flex;
+    width: 30%;
+    flex-direction: column;
+    height: 90%;
+}
+
+.productPageContentSection h2 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.productPageContentSectionStock {
+    color: rgb(81, 81, 81);
+    font-size: 1rem;
+}
+
+.productPageContentSectionPrice {
+    color: rgb(0, 0, 0);
+    font-size: 1.3rem;
+    margin: 1rem 0 0 0;
+}
+
+.productPageContentSectionFabric {
+    color: rgb(81, 81, 81);
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+.productPageContentSectionDescription {
+    font-size: 0.9rem;
+    text-align: justify;
+    color: gray;
+    margin-top: 2rem;
+}
+
+.productPageContentSectionFeatures {
+    padding: 1rem;
+    font-size: 0.9rem;
+    color: gray;
+}
+
+.productPageColorAndQuantity {
+    display: flex;
+    margin-top: 2rem;
+}
+
+.productPageSectionQuantity {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+}
+
+.productPageSectionQuantity input {
+    width: 7rem;
+}
+
+.productPageContentSectionColorsContainer {
+    display: flex;
+}
+
+.productPageContentSectionColorsColor {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    margin-right: 0.5rem;
+    cursor: pointer;
+}
+
+.productPageSectionSizes {
+    margin: 1rem 0 0 0;
+}
+
+.productPageSectionSizesLabels {
+    display: flex;
+    align-items: center;
+}
+
+.productPageSectionSizesLabels p:last-child {
+    color: blue;
+    margin-left: 1rem;
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+
+.productPageSectionSizesButtons {
+    margin: 1rem 0 0 0;
+}
+
+.productPageSectionSizesButton {
+    background-color: white;
+    border: 1px solid gray;
+    width: 2rem;
+    height: 2rem;
+    margin: 0 1rem 0 0;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.productPageSectionSizesButton:hover {
+    cursor: pointer;
+}
+
+.productPageSectionSizesButton.selected {
+    border: 2px solid black;
+}
+
+.productPageContentSectionButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    width: 100%;
+    color: #ffffff;
+    background-color: #333333;
+    border: 2px solid black;
+    height: 3rem;
+    font-family: sans-serif;
+    margin: 1rem 0 0 0;
+    cursor: pointer;
+    transition: box-shadow 0.3s, color 0.3s, width 0.5s, transform 0.3s;
+}
+
+.productPageContentSectionButton:hover {
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.4);
+    color: #f5f5f5;
+    transform: scale(1.05);
+}
+
+.productPageContentSectionButtonContainer {
+    width: 100%;
+    display: flex;
+}
+@media (max-width:450px){
+    .productPage {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    .productPageImageSection {
+        width: 100%;
+        margin-right: 0;
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .productPageImageSection img {
+        width: 60%;
+        height: 28rem;
+        object-fit: contain;
+    }
+
+    .productPageSmallerImages {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: flex-start;
+        align-items: center;
+        margin-left: 1rem;
+    }
+
+    .productPageSmallerImages img {
+        height: auto;
+        width: 50px;
+        cursor: pointer;
+    }
+
+    .productPageContentSection {
+        width: 95%;
+        height: 90%;
+        margin: 1rem 0 3rem 2%;
+        padding: 0;
+    }
+
+    .productPageContentSection h2 {
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+
+    .productPageContentSectionPrice {
+        color: rgb(0, 0, 0);
+        font-size: 1.1rem;
+        margin: 1rem 0 0 0;
+    }
+
+    .productPageContentSectionDescription {
+        font-size: 0.8rem;
+        text-align: justify;
+        color: gray;
+        margin-top: 1rem;
+    }
+
+    .productPageContentSectionFeatures {
+        padding: 1rem;
+        font-size: 0.8rem;
+        color: gray;
+    }
+
+    .productPageColorAndQuantity {
+        display: flex;
+        margin-top: 1rem;
+        flex-direction: column;
+        font-size: 0.9rem;
+    }
+
+    .productPageSectionQuantity {
+        display: flex;
+        flex-direction: row;
+        margin: 0.5rem 0 0 0 ;
+    }
+
+    .productPageContentSectionColors {
+        display: flex;
+    }
+
+    .productPageSectionQuantity input {
+        width: 7rem;
+    }
+
+    .productPageContentSectionColorsContainer {
+        display: flex;
+    }
+
+    .productPageContentSectionColorsColor {
+        width: 1.5rem;
+        height: 1.5rem;
+        border-radius: 50%;
+        border: none;
+        outline: none;
+        margin-left: 0.5rem;
+        cursor: pointer;
+    }
+
+    .productPageSectionSizes {
+        margin: 0.5rem 0 0 0;
+        font-size: 0.9rem;
+    }
+    .productPageSectionSizesLabels p:last-child {
+        margin-left: 0rem;
+        font-size: 0.6rem;
+        cursor: pointer;
+    }
+    
+
+    .productPageContentSectionButton {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+    }
+}
+@media (min-width:450px) and (max-width:500px){
+    .productPage {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    .productPageImageSection {
+        width: 100%;
+        margin-right: 0;
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .productPageImageSection img {
+        width: 60%;
+        height: 32rem;
+        object-fit: contain;
+    }
+
+    .productPageSmallerImages {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: flex-start;
+        align-items: center;
+        margin-left: 1rem;
+    }
+
+    .productPageSmallerImages img {
+        height: auto;
+        width: 50px;
+        cursor: pointer;
+    }
+
+    .productPageContentSection {
+        width: 95%;
+        height: 90%;
+        margin: 1rem 0 3rem 2%;
+        padding: 0;
+    }
+
+    .productPageContentSection h2 {
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+
+    .productPageContentSectionPrice {
+        color: rgb(0, 0, 0);
+        font-size: 1.1rem;
+        margin: 1rem 0 0 0;
+    }
+
+    .productPageContentSectionDescription {
+        font-size: 0.8rem;
+        text-align: justify;
+        color: gray;
+        margin-top: 1rem;
+    }
+
+    .productPageContentSectionFeatures {
+        padding: 1rem;
+        font-size: 0.8rem;
+        color: gray;
+    }
+
+    .productPageColorAndQuantity {
+        display: flex;
+        margin-top: 1rem;
+        flex-direction: column;
+        font-size: 0.9rem;
+    }
+
+    .productPageSectionQuantity {
+        display: flex;
+        flex-direction: row;
+        margin: 0.5rem 0 0 0 ;
+    }
+
+    .productPageContentSectionColors {
+        display: flex;
+    }
+
+    .productPageSectionQuantity input {
+        width: 7rem;
+    }
+
+    .productPageContentSectionColorsContainer {
+        display: flex;
+    }
+
+    .productPageContentSectionColorsColor {
+        width: 1.5rem;
+        height: 1.5rem;
+        border-radius: 50%;
+        border: none;
+        outline: none;
+        margin-left: 0.5rem;
+        cursor: pointer;
+    }
+
+    .productPageSectionSizes {
+        margin: 0.5rem 0 0 0;
+        font-size: 0.9rem;
+    }
+    .productPageSectionSizesLabels p:last-child {
+        margin-left: 0rem;
+        font-size: 0.6rem;
+        cursor: pointer;
+    }
+    
+
+    .productPageContentSectionButton {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+    }
+}
+@media (min-width:500px) and (max-width:900px) {
+    .productPage {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    .productPageImageSection {
+        width: 100%;
+        margin-right: 0;
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .productPageImageSection img {
+        width: 60%;
+        height: 35rem;
+        object-fit: contain;
+    }
+
+    .productPageSmallerImages {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .productPageSmallerImages img {
+        height: auto;
+        width: 50px;
+        cursor: pointer;
+    }
+
+    .productPageContentSection {
+        display: flex;
+        width: 85%;
+        flex-direction: column;
+        height: 90%;
+        margin: 1rem 0 3rem 3%;
+    }
+
+    .productPageContentSection h2 {
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+
+    .productPageContentSectionPrice {
+        color: rgb(0, 0, 0);
+        font-size: 1.1rem;
+        margin: 1rem 0 0 0;
+    }
+
+    .productPageContentSectionDescription {
+        font-size: 0.9rem;
+        text-align: justify;
+        color: gray;
+        margin-top: 1rem;
+    }
+
+    .productPageContentSectionFeatures {
+        padding: 1rem;
+        font-size: 0.9rem;
+        color: gray;
+    }
+
+    .productPageColorAndQuantity {
+        display: flex;
+        margin-top: 1rem;
+        flex-direction: column;
+    }
+
+    .productPageSectionQuantity {
+        display: flex;
+        flex-direction: row;
+        margin: 1rem 0 0 0 ;
+    }
+
+    .productPageContentSectionColors {
+        display: flex;
+    }
+
+    .productPageSectionQuantity input {
+        width: 7rem;
+    }
+
+    .productPageContentSectionColorsContainer {
+        display: flex;
+    }
+
+    .productPageContentSectionColorsColor {
+        width: 1.5rem;
+        height: 1.5rem;
+        border-radius: 50%;
+        border: none;
+        outline: none;
+        margin-right: 0.5rem;
+        cursor: pointer;
+    }
+
+    .productPageSectionSizes {
+        margin: 1rem 0 0 0;
+    }
+
+    .productPageContentSectionButton {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+    }
+}
+
+@media (min-width:900px) and (max-width:1050px) {
+    .productPageContentSection {
+        display: flex;
+        width: 40%;
+        flex-direction: column;
+        height: 90%;
+
+    }
+}
+
+@media (min-width:1050px) and (max-width:1200px) {
+    .productPageImageSection {
+        margin-right: 10%;
+    }
+    .productPageContentSection {
+        width: 40%;
+    }
+}
