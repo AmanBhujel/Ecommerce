@@ -17,14 +17,14 @@ const SignUp = () => {
     // for log in
     const handleSubmitLogin = async (e) => {
         e.preventDefault(); // Uncomment this line if this function is attached to a form submission.
-    
+
         try {
             const user = {
                 email: email,
                 password: password,
             };
             const response = await axios.post('https://backend-ecommerce-60yd.onrender.com/login', user);
-    
+
             if (response.status === 200) {
                 ToastMessage('success', response.data.message);
                 setCookie('authorization', response.data.token, 7);
@@ -50,21 +50,21 @@ const SignUp = () => {
             }
         }
     };
-    
+
 
     // for Signing up
     const handleSubmit = async (e) => {
         e.preventDefault();
-    
+
         try {
             const user = {
                 name: fullName,
                 email: email,
                 password: password,
             };
-    
+
             const response = await axios.post('https://backend-ecommerce-60yd.onrender.com/signup', user);
-            
+
             if (response.status === 201) {
                 ToastMessage('success', response.data.message);
                 setFullName('');
@@ -74,17 +74,14 @@ const SignUp = () => {
             }
         } catch (error) {
             if (error.response && error.response.status) {
-                // Check if error.response and error.response.status exist before accessing them.
                 if (error.response.status === 500) {
                     ToastMessage('error', 'Error signing up');
                 } else if (error.response.status === 409) {
                     ToastMessage('error', 'Email already registered');
                 } else {
-                    // Handle other HTTP error status codes if needed.
                     ToastMessage('error', 'An error occurred during sign up');
                 }
             } else {
-                // Handle non-HTTP errors, like network issues.
                 ToastMessage('error', 'An error occurred during sign up');
             }
         }
@@ -152,7 +149,15 @@ const SignUp = () => {
                             </div>
                             <button className='signUpButton' onClick={handleSubmit}>Sign up</button>
                             <p className='signUpContainerLine'>OR</p>
-                            <button className='signUpButtonGoogle' onClick={handleSubmit}>Sign up With Google</button>
+                            <button className='signUpButtonGoogle'
+                                onClick={(e) => {
+                                    setEmail('guestuser@gmail.com')
+                                    setPassword('guestuser')
+                                    handleSubmitLogin(e)
+                                }
+                                }>
+                                Log in as Guest
+                            </button>
                             <p className='signUpSectionBottomContent'>Already have an account? <span style={{ fontWeight: 'bold', textDecoration: 'underline', cursor: 'pointer' }} onClick={toggleSignUpOpen}>Log in</span></p>
 
                         </form>
@@ -192,7 +197,15 @@ const SignUp = () => {
                             </div>
                             <button className='signUpButton' onClick={handleSubmitLogin}>Log in</button>
                             <p className='signUpContainerLine'>OR</p>
-                            <button className='signUpButtonGoogle' onClick={handleSubmit}>Continue With Google</button>
+                            <button className='signUpButtonGoogle'
+                                onClick={(e) => {
+                                    setEmail('guestuser@gmail.com')
+                                    setPassword('guestuser')
+                                    handleSubmitLogin(e)
+                                }
+                                }>
+                                Log in as Guest
+                            </button>
                             <p className='signUpSectionBottomContent'>Don't have an account? <span style={{ fontWeight: 'bold', textDecoration: 'underline', cursor: 'pointer' }} onClick={toggleSignUpOpen}>Sign up</span></p>
 
                         </form>}

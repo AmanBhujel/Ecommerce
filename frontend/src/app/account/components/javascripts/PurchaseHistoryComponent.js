@@ -5,35 +5,35 @@ import React, { useEffect } from 'react'
 
 const PurchaseHistoryComponent = () => {
 
-  const getOrders = async () => {
-    const authorizationToken = GetCookie('authorization');
-    const headers = {
-      Authorization: `Bearer ${authorizationToken}`,
-    };
-    // Make a get request to get the order
-    await axios.get('https://backend-ecommerce-60yd.onrender.com/get-order', { headers })
-      .then((response) => {
-        console.log('Order got:', response.data);
-      })
-      .catch((error) => {
-        console.error('Error while creating order:', error);
-      });
-  }
+  // const getOrders = async () => {
+  //   const authorizationToken = GetCookie('authorization');
+  //   const headers = {
+  //     Authorization: `Bearer ${authorizationToken}`,
+  //   };
+  //   // Make a get request to get the order
+  //   await axios.get('https://backend-ecommerce-60yd.onrender.com/get-order', { headers })
+  //     .then((response) => {
+  //       console.log('Order got:', response.data);
+  //     })
+  //     .catch((error) => {
+  //       console.error('Error while creating order:', error);
+  //     });
+  // }
 
-  useEffect(() => {
-    getOrders();
-  }, [])
+  // useEffect(() => {
+  //   getOrders();
+  // }, [])
 
-  return (
-    <div style={{
-      display: 'flex',
-      justifyContent: 'center',
-      alignItems: 'center',
-      fontWeight: 'bolder',
-      fontSize: '2rem',
-      height: '100%'
-    }}>No Items Purhcased  yet.</div>
-  )
+  // return (
+  //   <div style={{
+  //     display: 'flex',
+  //     justifyContent: 'center',
+  //     alignItems: 'center',
+  //     fontWeight: 'bolder',
+  //     fontSize: '2rem',
+  //     height: '100%'
+  //   }}>No Items Purhcased  yet.</div>
+  // )
 }
 
 export default PurchaseHistoryComponent;

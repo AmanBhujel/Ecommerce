@@ -27,7 +27,6 @@ const closeContent = () => {
   setShowContent(false);
   setActiveButton('');
 };
-console.log('running active', activeButton)
 
 const sidebarButtons = [
   {

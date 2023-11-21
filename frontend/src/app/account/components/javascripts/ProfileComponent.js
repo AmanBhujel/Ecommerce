@@ -28,7 +28,6 @@ const ProfileComponent = () => {
           setAddress(address || '');
           setEmail(email || '');
           setPhone(phone || '');
-          console.log(userData);
         } else {
           console.error('Invalid API response:', response);
         }
@@ -43,7 +42,6 @@ const ProfileComponent = () => {
     setLoading(false);
   }, []);
 
-  console.log(fullName, address, email, phone)
 
   const fields = [
     { label: 'Full name', stateKey: 'fullName' },

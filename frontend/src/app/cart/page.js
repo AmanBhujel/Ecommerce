@@ -103,19 +103,16 @@ const Cart = () => {
             const headers = {
                 Authorization: `Bearer ${authorizationToken}`,
             };
-            console.log('authtoken', authorizationToken)
             const response = await axios.get('https://backend-ecommerce-60yd.onrender.com/get-cart-items', {
                 headers
             });
             setCartItems(response.data);
             calculateTotal(response.data);
-            console.log(response)
             const items = response.data;
 
             items.map((item) => {
                 cartIds.push(item.cart_id)
             })
-            console.log(cartIds)
         } catch (error) {
             console.error('Error fetching cart items:', error);
             ToastMessage("error", "Sign in required!");
@@ -154,14 +151,12 @@ const Cart = () => {
             const headers = {
                 Authorization: `Bearer ${authorizationToken}`,
             };
-            console.log(productId)
             const response = await axios.put('https://backend-ecommerce-60yd.onrender.com/update-cart-item', {
                 productId,
                 quantity,
             }, { headers });
 
             if (response.status === 200) {
-                console.log(response.data.message);
                 fetchCartItems();
             }
         } catch (error) {
@@ -187,7 +182,6 @@ const Cart = () => {
     const decreaseQuantity = (itemId) => {
         const updatedCartItems = cartItems.map((item) => {
             if (item.product_id === itemId && item.quantity > 1) {
-                console.log(item)
                 updateCartItems(item.product_id, item.quantity - 1);
             }
             return item;

@@ -53,7 +53,7 @@ const EditCanvas = ({ images }) => {
         { fabricURL: dataURL }
       )
         .then(function (response) {
-          console.log(response.mmessage);
+          console.log(response.message);
         })
         .catch(function (error) {
           console.log(error)

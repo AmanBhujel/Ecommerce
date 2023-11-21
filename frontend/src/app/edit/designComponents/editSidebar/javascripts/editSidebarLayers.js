@@ -19,12 +19,11 @@ const EditSidebarLayers = () => {
 
   const handleDataBackend = () => {
     const jsonData = JSON.stringify(objectsInCanvas)
-    console.log(jsonData, 'jsondata');
     axios.post('https://backend-ecommerce-60yd.onrender.com/storeCanvasImage', {
       fabricObjects: objectsInCanvas
     })
       .then(function (response) {
-        console.log(response.mmessage);
+        console.log(response.message);
       })
       .catch(function (error) {
         console.log(error)
@@ -116,7 +115,6 @@ const EditSidebarLayers = () => {
     return (
       <div>
         {objectsInCanvas.map((object, index) => {
-          console.log('object', object);
           if (object.type === 'textbox') {
             const canvas = document.createElement('canvas');
             canvas.width = 60;

@@ -14,7 +14,6 @@ const GetCookie = (name) => {
     }
 
     if (requiredValue) {
-        console.log('Required Cookie:', requiredValue);
         return requiredValue;
     } else {
         console.log('Required cookie not found');

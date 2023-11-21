@@ -107,7 +107,6 @@ const EditSidebarText = () => {
     },
   ];
 
-  console.log(textData);
 
   const handleAddingPredesignedText = (textData) => {
     setAddPreDesignedText(true);
@@ -127,7 +126,6 @@ const EditSidebarText = () => {
   const handleFontWeightChange = (event) => {
     const newFontWeight = event.target.value;
     setFontWeight(newFontWeight);
-    console.log(newFontWeight)
   };
   return (
     <>
