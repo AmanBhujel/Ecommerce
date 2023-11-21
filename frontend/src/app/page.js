@@ -40,7 +40,6 @@ export default function Home() {
   //   simulateRendering();
   // }, []);
 
-
   useEffect(() => {
     const componentsToLoad = [
       "HeroSection",

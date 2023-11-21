@@ -44,6 +44,7 @@ const Edit = ({ params }) => {
     };
   }, []);
   return (
+    // <Loading />
     <>
       {isLoading ? (
         <Loading />
