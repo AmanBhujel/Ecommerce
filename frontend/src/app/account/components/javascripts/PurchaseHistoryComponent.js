@@ -11,7 +11,7 @@ const PurchaseHistoryComponent = () => {
       Authorization: `Bearer ${authorizationToken}`,
     };
     // Make a get request to get the order
-    await axios.get('http://localhost:5000/get-order', { headers })
+    await axios.get('https://backend-ecommerce-60yd.onrender.com/get-order', { headers })
       .then((response) => {
         console.log('Order got:', response.data);
       })

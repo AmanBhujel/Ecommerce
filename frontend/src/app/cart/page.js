@@ -104,7 +104,7 @@ const Cart = () => {
                 Authorization: `Bearer ${authorizationToken}`,
             };
             console.log('authtoken', authorizationToken)
-            const response = await axios.get('http://localhost:5000/get-cart-items', {
+            const response = await axios.get('https://backend-ecommerce-60yd.onrender.com/get-cart-items', {
                 headers
             });
             setCartItems(response.data);
@@ -138,7 +138,7 @@ const Cart = () => {
                     Authorization: `Bearer ${authorizationToken}`,
                 },
             };
-            const response = await axios.delete(`http://localhost:5000/delete-cart-items?productId=${productId}`, config);
+            const response = await axios.delete(`https://backend-ecommerce-60yd.onrender.com/delete-cart-items?productId=${productId}`, config);
             ToastMessage('success', response.data.message);
             fetchCartItems();
         } catch (error) {
@@ -155,7 +155,7 @@ const Cart = () => {
                 Authorization: `Bearer ${authorizationToken}`,
             };
             console.log(productId)
-            const response = await axios.put('http://localhost:5000/update-cart-item', {
+            const response = await axios.put('https://backend-ecommerce-60yd.onrender.com/update-cart-item', {
                 productId,
                 quantity,
             }, { headers });

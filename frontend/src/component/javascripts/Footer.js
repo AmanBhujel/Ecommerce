@@ -21,7 +21,7 @@ const Footer = () => {
         return;
       }
       else {
-        await axios.post('http://localhost:5000/getemail', { email: email })
+        await axios.post('https://backend-ecommerce-60yd.onrender.com/getemail', { email: email })
         .then(res=>
         ToastMessage('success',res.data.message)
         )

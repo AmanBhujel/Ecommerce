@@ -23,7 +23,7 @@ const SignUp = () => {
                 email: email,
                 password: password,
             };
-            const response = await axios.post('http://localhost:5000/login', user);
+            const response = await axios.post('https://backend-ecommerce-60yd.onrender.com/login', user);
     
             if (response.status === 200) {
                 ToastMessage('success', response.data.message);
@@ -63,7 +63,7 @@ const SignUp = () => {
                 password: password,
             };
     
-            const response = await axios.post('http://localhost:5000/signup', user);
+            const response = await axios.post('https://backend-ecommerce-60yd.onrender.com/signup', user);
             
             if (response.status === 201) {
                 ToastMessage('success', response.data.message);

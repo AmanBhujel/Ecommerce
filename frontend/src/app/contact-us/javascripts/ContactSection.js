@@ -14,7 +14,7 @@ const ContactSection = () => {
 
     const handleSubmit = async () => {
         try {
-            const response = await axios.post('http://localhost:5000/contact-info', {
+            const response = await axios.post('https://backend-ecommerce-60yd.onrender.com/contact-info', {
                 name,
                 email,
                 phone,

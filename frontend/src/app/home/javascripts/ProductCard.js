@@ -13,9 +13,9 @@ const ProductCard = ({ id, name, stock, price, image }) => {
             const headers = {
               Authorization: `Bearer ${authorizationToken}`,
             };
-            const response = await axios.post('http://localhost:5000/add-to-cart', {
-              productId,
-              quantity,
+            const response = await axios.post('https://backend-ecommerce-60yd.onrender.com/add-to-cart', {
+              productId : id,
+              quantity : 1,
             }, { headers });
     
             if (response.status === 200 || response.status === 201) {
@@ -28,6 +28,7 @@ const ProductCard = ({ id, name, stock, price, image }) => {
           }
         } catch (error) {
           ToastMessage('error', 'Error occured while adding to cart.');
+          console.log(error)
         }
       };
 

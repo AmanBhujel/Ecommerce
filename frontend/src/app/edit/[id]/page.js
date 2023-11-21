@@ -21,7 +21,7 @@ const Edit = ({ params }) => {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await axios.get(`http://localhost:5000/products/${productId}`);
+        const response = await axios.get(`https://backend-ecommerce-60yd.onrender.com/${productId}`);
         setProduct(response.data);
         setImages(response.data.images[0].data);
         setIsLoading(false);

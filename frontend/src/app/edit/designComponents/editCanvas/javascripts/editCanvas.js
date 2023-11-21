@@ -49,7 +49,7 @@ const EditCanvas = ({ images }) => {
       fabricRef.current.setDimensions({ width: 210, height: 230 });
       renderCanvas();
       console.log('data', dataURL)
-      await axios.post('http://localhost:5000/store-fabric-objects',
+      await axios.post('https://backend-ecommerce-60yd.onrender.com/store-fabric-objects',
         { fabricURL: dataURL }
       )
         .then(function (response) {
@@ -225,7 +225,7 @@ const EditCanvas = ({ images }) => {
 
   //get stored fabric data 
   const getStoredFabricData = async () => {
-    await axios.get('http://localhost:5000/get-fabric-objects')
+    await axios.get('https://backend-ecommerce-60yd.onrender.com/get-fabric-objects')
       .then(response => {
 
         setObjectAndRender(JSON.parse(response.data));
@@ -397,7 +397,7 @@ const EditCanvas = ({ images }) => {
         // mr: false,
       });
       fabricRef.current.add(textbox);
-      axios.post('http://localhost:5000/store-fabric-objects', textbox)
+      axios.post('https://backend-ecommerce-60yd.onrender.com/store-fabric-objects', textbox)
         .then(response => {
           console.log(response.data.message);
         })

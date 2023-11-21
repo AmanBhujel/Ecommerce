@@ -38,7 +38,7 @@ const CheckoutForm = () => {
         };
 
         // Make a POST request to create the order
-        await axios.post('http://localhost:5000/order', orderData, { headers })
+        await axios.post('https://backend-ecommerce-60yd.onrender.com/order', orderData, { headers })
             .then((response) => {
                 console.log('Order created:', response.data);
                 ToastMessage('success', 'Ordered Successfully.')

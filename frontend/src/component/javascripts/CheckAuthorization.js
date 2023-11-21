@@ -8,7 +8,7 @@ export const checkAuthorization = async () => {
             const headers = {
                 Authorization: `Bearer ${authorizationToken}`,
             };
-            const response = await axios.get('http://localhost:5000/check-auth', { headers });
+            const response = await axios.get('https://backend-ecommerce-60yd.onrender.com/check-auth', { headers });
     
             if (response.data.authorized === true) {
                 return true;

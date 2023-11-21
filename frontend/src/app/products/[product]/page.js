@@ -25,7 +25,7 @@ const ProductPage = ({ params }) => {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await axios.get(`http://localhost:5000/products/${productId}`);
+        const response = await axios.get(`https://backend-ecommerce-60yd.onrender.com/products/${productId}`);
         setProduct(response.data);
         setImages(response.data.images);
         setLoading(false);
@@ -66,7 +66,7 @@ const ProductPage = ({ params }) => {
         const headers = {
           Authorization: `Bearer ${authorizationToken}`,
         };
-        const response = await axios.post('http://localhost:5000/add-to-cart', {
+        const response = await axios.post('https://backend-ecommerce-60yd.onrender.com/add-to-cart', {
           productId,
           quantity,
         }, { headers });

@@ -20,7 +20,7 @@ const EditSidebarLayers = () => {
   const handleDataBackend = () => {
     const jsonData = JSON.stringify(objectsInCanvas)
     console.log(jsonData, 'jsondata');
-    axios.post('http://localhost:5000/storeCanvasImage', {
+    axios.post('https://backend-ecommerce-60yd.onrender.com/storeCanvasImage', {
       fabricObjects: objectsInCanvas
     })
       .then(function (response) {

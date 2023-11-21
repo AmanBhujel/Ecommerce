@@ -19,7 +19,7 @@ const ProfileComponent = () => {
     const headers = {
       Authorization: `Bearer ${authorizationToken}`,
     };
-    axios.get('http://localhost:5000/getuser', { headers })
+    axios.get('https://backend-ecommerce-60yd.onrender.com/getuser', { headers })
       .then((response) => {
         if (response.data && response.data.length > 0) {
           const userData = response.data[0];
@@ -68,7 +68,7 @@ const ProfileComponent = () => {
       Authorization: `Bearer ${authorizationToken}`,
     };
 
-    axios.put('http://localhost:5000/update-user', updatedData, { headers })
+    axios.put('https://backend-ecommerce-60yd.onrender.com/update-user', updatedData, { headers })
       .then((response) => {
         if (response.status === 201) {
           ToastMessage('success', 'User profile updated successfully')
