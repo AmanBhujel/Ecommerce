@@ -1,5 +1,7 @@
 # E-Commerce
 
+## Link: https://ecommerce-lime-delta.vercel.app/
+
  A Full-Stack E-Commerce platform with cloth customization powered by Fabric.js and boosted by Redis for rapid optimization, our platform ensures a swift and responsive user experience. Tech stacks include MySQL for robust database management, Next.js 13 for a cutting-edge frontend, Sonner for delightful toasting experiences, and Nodemailer for seamless email notifications – especially handy when signing up for our newsletter.
  
 ## Tech Stacks Used
@@ -37,23 +39,16 @@
 3. **Set Up Environment Variables:**
    Create .env file inside backend directory and create these variables:
 
-   PORT=5000
-   # MySQL Database
+  PORT=5000
   DB_HOST=your_mysql_db_host
   DB_PORT=3306
   DB_USER=your_db_user
   DB_PASSWORD=your_db_password
   DB_DATABASE=your_db_name
-  
-  # Nodemailer (Email Service)
   EMAIL_SERVICE=your_email_service_provider
   EMAIL_USERNAME=your_email_username
   EMAIL_PASSWORD=your_email_password
-  
-  # JWT Token Key
   JWT_TOKEN_KEY=your_jwt_token_key
-  
-  # Redis Server
   REDIS_URL=your_redis_url(Create free from render.com)
   
   # Application Environment
