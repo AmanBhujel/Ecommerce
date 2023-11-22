@@ -38,18 +38,18 @@
 
 3. **Set Up Environment Variables:**
    Create a `.env` file inside the `backend` directory and define these variables:
-  -PORT=5000
-  -DB_HOST=your_mysql_db_host
-  -DB_PORT=3306
-  -DB_USER=your_db_user
-  -DB_PASSWORD=your_db_password
-  -DB_DATABASE=your_db_name
-  -EMAIL_SERVICE=your_email_service_provider
-  -EMAIL_USERNAME=your_email_username
-  -EMAIL_PASSWORD=your_email_password
-  -JWT_TOKEN_KEY=your_jwt_token_key
-  -REDIS_URL=your_redis_url(Create free from render.com)
-  -NODE_ENV=production
+  - PORT=5000
+  - DB_HOST=your_mysql_db_host
+  - DB_PORT=3306
+  - DB_USER=your_db_user
+  - DB_PASSWORD=your_db_password
+  - DB_DATABASE=your_db_name
+  - EMAIL_SERVICE=your_email_service_provider
+  - EMAIL_USERNAME=your_email_username
+  - EMAIL_PASSWORD=your_email_password
+  - JWT_TOKEN_KEY=your_jwt_token_key
+  - REDIS_URL=your_redis_url(Create free from render.com)
+  - NODE_ENV=production
 
 4.**Run the Application:**
  ```bash
