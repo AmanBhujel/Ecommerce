@@ -8,6 +8,7 @@ import EditSidebar from '../designComponents/editSidebar/javascripts/EditSidebar
 import EditCanvas from '../designComponents/editCanvas/javascripts/editCanvas';
 import EditSidebarBottom from '../designComponents/editSidebar/javascripts/EditSidebarBottom';
 import axios from 'axios';
+import { useRouter } from 'next/navigation';
 
 const Edit = ({ params }) => {
   const [screenWidth, setScreenWidth] = useState(null);
@@ -15,6 +16,12 @@ const Edit = ({ params }) => {
   const [isLoading, setIsLoading] = useState(true);
   const [images, setImages] = useState();
   const productId = params.id;
+  const router = useRouter();
+
+  const crossButtonFunction = () => {
+    router.back()
+  }
+
   const updateScreenWidth = () => {
     setScreenWidth(window.innerWidth);
   };
@@ -55,7 +62,7 @@ const Edit = ({ params }) => {
               <h2>Trending Hoodie Cotton-Fabric</h2>
             </div>
             <div className='headerOfEditPageButtons'>
-              <button>
+              <button onClick={crossButtonFunction}>
                 <i>
                   <RxCross1 />
                 </i>
