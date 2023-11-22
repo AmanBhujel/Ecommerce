@@ -17,21 +17,21 @@ const EditSidebarLayers = () => {
   const dragLayer = useRef(null);
   const dragOverItem = useRef(null);
 
-  const handleDataBackend = () => {
-    const jsonData = JSON.stringify(objectsInCanvas)
-    axios.post('https://backend-ecommerce-60yd.onrender.com/storeCanvasImage', {
-      fabricObjects: objectsInCanvas
-    })
-      .then(function (response) {
-        console.log(response.message);
-      })
-      .catch(function (error) {
-        console.log(error)
-      });
+  // const handleDataBackend = () => {
+  //   const jsonData = JSON.stringify(objectsInCanvas)
+  //   axios.post('https://backend-ecommerce-60yd.onrender.com/storeCanvasImage', {
+  //     fabricObjects: objectsInCanvas
+  //   })
+  //     .then(function (response) {
+  //       console.log(response.message);
+  //     })
+  //     .catch(function (error) {
+  //       console.log(error)
+  //     });
 
-    // Send the fabricObjects array to the backend as JSON
+  //   // Send the fabricObjects array to the backend as JSON
 
-  }
+  // }
 
   const handleSorting = () => {
     //duplicating the layers
@@ -155,8 +155,6 @@ const EditSidebarLayers = () => {
                     </button>
                   </span>
                 </div>
-                <button onClick={handleDataBackend}>SEND DATA TO BACKEND</button>
-
               </div>
             );
           } else if (object.type === 'image') {

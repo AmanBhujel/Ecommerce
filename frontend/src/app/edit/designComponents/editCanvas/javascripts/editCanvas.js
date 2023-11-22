@@ -146,10 +146,6 @@ const EditCanvas = ({ images }) => {
     }
   }
 
-  //sending data to backend
-  const sendDataToBackend = () => {
-
-  }
   // Handle delete object
   const handleDeleteObject = () => {
     const activeObject = fabricRef.current.getActiveObject();
@@ -520,7 +516,6 @@ const EditCanvas = ({ images }) => {
             </div>
           </div>
         </section>
-        <button onClick={sendDataToBackend}>send data to backend</button>
       </div>
     </>
   );
