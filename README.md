@@ -52,14 +52,29 @@
   - NODE_ENV=production
 
 4.**Run the Application:**
- ```bash
-   # Install Backend Dependencies
-   cd backend
-   node index.js
+     ```bash
 
-   # Install Frontend Dependencies
-   cd frontend
-   npm run dev
+        # Install Backend Dependencies
+        cd backend
+        node index.js
+
+    
+       # Install Frontend Dependencies
+       cd frontend
+       npm run dev
+
+
+## Project Photos
+
+![Customize](https://github.com/AmanBhujel/Ecommerce/assets/132144406/026794cb-1680-4861-a6be-3804334078f9)
+
+![EcommerceProducts](https://github.com/AmanBhujel/Ecommerce/assets/132144406/63133254-1ca9-4059-b4b8-7a8b0c627db5)
+
+![EcommerceProduct](https://github.com/AmanBhujel/Ecommerce/assets/132144406/e63143e7-809c-4fd6-a0bf-1f6cc89e4080)
+
+![Cart](https://github.com/AmanBhujel/Ecommerce/assets/132144406/dcaf59a0-bb5e-4ac8-be29-7c4a2ae5ba5e)
+
+
 
 
    
