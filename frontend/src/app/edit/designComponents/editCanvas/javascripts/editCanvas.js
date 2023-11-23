@@ -484,8 +484,8 @@ const EditCanvas = ({ images }) => {
         <section className='editCanvasButtonSection'>
           <div>
             <button onClick={handleDeleteObject} data-tooltip="Delete"><AiFillDelete /></button>
-            <button onClick={handleGridToggle} data-tooltip="Toggle Grid"><PiGridFourThin /></button>
-            <button onClick={exportCanvasImage} data-tooltip="Export"><span>E</span></button>
+            {/* <button onClick={handleGridToggle} data-tooltip="Toggle Grid"><PiGridFourThin /></button> */}
+            {/* <button onClick={exportCanvasImage} data-tooltip="Export"><span>E</span></button> */}
           </div>
 
           {showTextEditor ?
